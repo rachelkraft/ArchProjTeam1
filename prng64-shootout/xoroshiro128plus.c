@@ -1,9 +1,12 @@
 #include <stdint.h>
 #include <stdio.h>
+#include <stdlib.h>
 #define __STDC_FORMAT_MACROS
 #include <inttypes.h>
 #include<time.h>
 #include "mt64.h"
+#include <stdarg.h>
+#include <string.h>
 
 uint64_t xoroshiro128plus(uint64_t s[2])
 {
@@ -17,16 +20,29 @@ uint64_t xoroshiro128plus(uint64_t s[2])
 }
 
 
-int main()
+int main(int argc, char *argv[])
 {
-    int size=1000000;
+    int size;
+    
+    if (argc == 3){
+        size = atoi(argv[1]);
+    }
+    
     clock_t starting_time, finishing_time;
     FILE * fp;
     /* open the file for writing*/
-    fp = fopen ("Xoroshiro128plus_60mill.txt","w");
+    fp = fopen (argv[2],"w");
     uint64_t s[]={6287354649,9752954639};
+    
     /*Write header*/
-    fprintf (fp, "#==================================================================\n# generator xoroshiro128plus  seed = 6287354649\n#==================================================================\ntype: d\ncount: 60000000\nnumbit: 64\n");
+    char str[1280];
+    char size_str[12];
+    sprintf(size_str, "%d", size);
+    strcat(str,"#==================================================================\n# generator xoroshiro128plus  seed = 6287354649\n#==================================================================\ntype: d\ncount: ");
+    strcat(str,size_str);
+    strcat(str,"\nnumbit: 64\n");
+    fprintf(fp,"%s",str);
+    
     int i;
     starting_time = clock();
     /* write lines of text into the file stream*/
