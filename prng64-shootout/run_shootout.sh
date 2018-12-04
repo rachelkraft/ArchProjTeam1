@@ -4,10 +4,10 @@
 echo -n "" > output_shootout_30.txt
 
 #compile shootout.c
-gcc shootout.c -o shootout
+make
 
 for run in {1..30}
 do
-  ./shootout >> output_shootout_25.txt
+  ./shootout >> output_shootout_30.txt
   echo "/////////////////////\n" >> output_shootout_30.txt
 done
