@@ -1,7 +1,6 @@
 # 64-bit PRNG Shootout
 
-Benchmark performance and test the quality of a number of PRNGs that
-generate 64 bits at a time.
+Trying to make changes now
 
 Full article: [Finding the Best 64-bit Simulation PRNG][a]
 
