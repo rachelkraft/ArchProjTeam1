@@ -1,6 +1,7 @@
 # 64-bit PRNG Shootout
 
 Trying to make changes now
+More tests
 
 Full article: [Finding the Best 64-bit Simulation PRNG][a]
 
