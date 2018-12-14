@@ -1,4 +1,4 @@
-# Testing PRNGS (Pseudo Random Number Generators) Across Different Architectures
+# Testing PRNGS Across Different Architectures
 A repository for our architecture group team
 
 ## Problem and Motivation
