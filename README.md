@@ -20,6 +20,8 @@ Dieharder results (text and table)
 ### Shootout Results
 Shootout results (boxplots and barchart)
 
+![alt-text-1](Graphing/barchart_compare.png "title-1") ![alt-text-2](Graphing/barchart_compare.png "title-2")
+
 ### 1,5,10 Million Results
 Graphs for running 1,5,10 million number generation
 
