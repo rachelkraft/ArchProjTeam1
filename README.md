@@ -34,12 +34,14 @@ Looking more in depth
 ### 1,5,10 Million Results
 
 Graphs showing comparison of architecture
+
 <img src="Graphing/10_Runs_Graphs/mt64_boxcompare.png" alt="hi" width="425"/> 
 <img src="Graphing/10_Runs_Graphs/xorshift_boxcompare.png" alt="hi" width="425"/> 
 <img src="Graphing/10_Runs_Graphs/spcg_boxcompare.png" alt="hi" width="425"/> 
 <img src="Graphing/10_Runs_Graphs/xoroshiro_boxcompare.png" alt="hi" width="425"/> 
 
 Graphs showing comparison of algorithms
+
 <img src="Graphing/10_Runs_Graphs/mac2011_boxcompare.png" alt="hi" width="425"/> 
 <img src="Graphing/10_Runs_Graphs/mac2015_boxcompare.png" alt="hi" width="425"/> 
 <img src="Graphing/10_Runs_Graphs/mac2017_boxcompare.png" alt="hi" width="425"/> 
