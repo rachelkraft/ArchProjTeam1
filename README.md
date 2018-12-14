@@ -20,10 +20,30 @@ Dieharder results (text and table)
 ### Shootout Results
 Shootout results (boxplots and barchart)
 
-<img src="Graphing/barchart_compare.png" alt="hi" width="425"/> <img src="Graphing/barchart_compare.png" alt="hi" width="425"/>
+Graphs looking at all the results
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_all.png" alt="hi" class="inline"/>
+<img src="Graphing/barchart_compare.png" alt="hi" class="inline"/>
+
+Looking more in depth
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_mt.png" alt="hi" width="425"/> 
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_xorshift.png" alt="hi" width="425"/>
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_spcg64.png" alt="hi" width="425"/>
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_xoroshiro.png" alt="hi" width="425"/>
+
 
 ### 1,5,10 Million Results
-Graphs for running 1,5,10 million number generation
+
+Graphs showing comparison of architecture
+<img src="Graphing/10_Runs_Graphs/mt64_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/xorshift_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/spcg_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/xoroshiro_boxcompare.png" alt="hi" width="425"/> 
+
+Graphs showing comparison of algorithms
+<img src="Graphing/10_Runs_Graphs/mac2011_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/mac2015_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/mac2017_boxcompare.png" alt="hi" width="425"/> 
+<img src="Graphing/10_Runs_Graphs/ubuntu1804_boxcompare.png" alt="hi" width="425"/> 
 
 ## Discussion/Results
 Our discussion of the graphs and results
