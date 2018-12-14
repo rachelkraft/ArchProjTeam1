@@ -1,5 +1,11 @@
 # ArchProjTeam1
 A repository for our architecture group team
+
+
+
+
+# Examples
+## How to put in Image
 <img src="Graphing/barchart_compare.png" alt="hi" class="inline"/>
 ## Subtitle
 Some stuff
