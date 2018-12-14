@@ -55,9 +55,7 @@ Our references
 # Examples
 ## How to put in Image
 <img src="Graphing/barchart_compare.png" alt="hi" class="inline"/>
-’’’
-hello
-’’’
+
 ## Subtitle
 Some stuff
 ### Sub Subtitle
