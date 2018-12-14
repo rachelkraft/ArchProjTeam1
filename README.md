@@ -61,9 +61,9 @@ Some stuff
 ### Sub Subtitle
 More stuff
 #### Sub Sub Sub Title
-'''
-This is how you insert code
-'''
+```
+Give an example
+```
 ## This is how you do a list
 * Item 1
 * Item 2
