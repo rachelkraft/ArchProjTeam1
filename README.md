@@ -16,7 +16,7 @@ The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitle
 <img src="report_images/MT_table.png" alt="hi" class="inline"/>
 
 #### Xorshift 128+ 
-Write Xorshift history here
+George Marsaglia published "Xorshift RNGs" in 2003 which introduced the class of xorshift PRNGs. His major improvement upon previous PRNGs was utilizing a non-sparse polynomial. Informally, this means that previous PRNGs would "skip" many potential numbers, which leads to predictability (non-normal distributions) and shorter periods. Xorshift 128+ was published in the paper "Further scramblings of Marsaglia’s xorshift generators" by Sebastiano Vigna in 2016. His major contribution was lengthening the period to 2^(128) - 1 which allowed the algorithm to pass more statistical tests than many other xorshift variants. Although xorshift128+ may still sometimes pass fewer statistical tests than MT, it was designed with speed as the first priority.
 
 #### SPCG64 
 Write SPCG64 history here
