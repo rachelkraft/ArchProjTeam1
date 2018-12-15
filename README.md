@@ -26,19 +26,20 @@ Write Xoroshiro history here
 
 |    System    | Architecture |   # Cores  | Speed (GHz) |  Memory  | Memory speed (MHz) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Ubuntu 18.04  | Intel Core i7 | 8  | 3.4  | 16 GB DDR3 | 1333 |
-| Mac OS 2011 | Intel Core i7  | 2 | 2.8  | 4 GB DDR3 | 1333 |
-| Mac OS 2015 | Intel Core i5  | 2 | 2.7  | 8 GB DDR3 | 1867 |
-| Mac OS 2017 | Intel Core i5  | 2 | 2.3  | 8 GB LPDDR3 | 2133 |
+| Ubuntu 18.04  | Intel Core i7-2600 | 8  | 3.4  | 16 GB DDR3 | 1333 |
+| Mac OS 2011 | Intel Core i7-2640M  | 2 | 2.8  | 4 GB DDR3 | 1333 |
+| Mac OS 2015 | Intel Core i5-5257U  | 2 | 2.7  | 8 GB DDR3 | 1867 |
+| Mac OS 2017 | Intel Core i5-7360U  | 2 | 2.3  | 8 GB LPDDR3 | 2133 |
 
-#### Macbook Pro 2011
-Write Mac 2011 info here
+We tested four distinct Intel Core architectures released between 2011 and 2017. Among our architectures, we have both a mobile and desktop version of the Sandy Bridge architecture. Sandy Bridge (first released Jan 2011) was the sucessor of the Nehalem microarchitecture released in 2008. There were many improvements incorporated including many cache optimizations as well as improvements to functional units for faster/more accurate output. It also implements two load/store operations for each memory channel per CPU cycle and a fourteeen- to nineteen-stage instruction pipeline. Based on this information, we expected the Ubuntu machine to outperform the 2011 Macbook.
 
-#### Macbook Pro 2015
-Write Mac 2015 info here
+Unfortunately, after scouring the web, we couldn't find any reliable information about transistor count or die size for the Kaby Lake architecture. Kaby Lake is the successor to the Skylake architecture (which also has 14 nm lithography) when it was announced that the 10 nm lithography Cannon Lake architecture release would be delayed. Kaby Lake is a physical artifact of Moore's Law (and the fact that it is losing relevancy) as it broke the Intel "tick-tock" design/release model which incorporated die size decrease as a central element of a new architecture, and instead introduced the new "process architecture optimization" design model. Note that our Kaby Lake 2017 Macbook is the only machine we tested that utilized low-power cores. Broadwell is the predecessor to Skylake and the sucessor of the Haswell architecture. Most of the improvements made in the Broadwell architecture are related to the details of the integrated GPU, particulary for data science.
 
-##### Macbook Pro 2017 
-Write Mac 2017 info here
+| Architecture | Release | Lithography (nm) | # Transistors | Die size (mm^2) |
+| i7-2600 | Jan 2011, ~$300, Sandy Bridge (2nd generation) | 32 | 1.16 billion | 216 |
+| i7-2640M | Sept 2011, ~$350, Sandy Bridge (2nd generation) | 32 | 624 million | 149 |
+| i5-5257U | Jan 2015, ~$315, Broadwell-U (5th generation) | 14 | 1.3 - 1.9 billion | 82 - 133 |
+| i5-7360U | Jan 2017, ~$300, Kaby Lake-U (7th generation) | 14 | ? | ? |
 
 ### Method
 
