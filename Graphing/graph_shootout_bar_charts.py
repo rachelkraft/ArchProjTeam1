@@ -7,7 +7,7 @@ em_data_df = pd.read_csv('./Shootout Data/Shootout_Emily.csv')
 aishah_data_df = pd.read_csv('./Shootout Data/Shootout_Aishah_Mac2011.csv')
 agni_data_df = pd.read_csv('./Shootout Data/Shootout_Agni.csv')
 
-df = pd.concat([r_data_df.mean(),em_data_df.mean(),aishah_data_df.mean(),agni_data_df.mean()],axis=1).T
+df = pd.concat([aishah_data_df.mean(),em_data_df.mean(),r_data_df.mean(),agni_data_df.mean()],axis=1).T
 
 
 # Setting the positions and width for the bars
@@ -35,7 +35,7 @@ plt.bar(pos,
 # in position pos + some width buffer,
 plt.bar([p + width for p in pos],
         #using df['mid_score'] data,
-        df['SPCG64'],
+        df['Xorshift 128+'],
         # of width
         width,
         # with alpha 0.5
@@ -49,7 +49,7 @@ plt.bar([p + width for p in pos],
 # in position pos + some width buffer,
 plt.bar([p + width*2 for p in pos],
         #using df['post_score'] data,
-        df['Xoroshiro 128+'],
+        df['SPCG64'],
         # of width
         width,
         # with alpha 0.5
@@ -63,7 +63,7 @@ plt.bar([p + width*2 for p in pos],
 # in position pos + some width buffer,
 plt.bar([p + width*3 for p in pos],
         #using df['post_score'] data,
-        df['Xorshift 128+'],
+        df['Xoroshiro 128+'],
         # of width
         width,
         # with alpha 0.5
@@ -90,7 +90,7 @@ plt.xlim(min(pos)-width, max(pos)+width*4)
 plt.ylim([0, 10000] )
 
 # Adding the legend and showing the plot
-plt.legend(['Mersenne Twister', 'SPCG64', 'Xoroshiro 128+','Xorshift 128+'], loc='upper left')
+plt.legend(['Mersenne Twister','Xorshift 128+', 'SPCG64','Xoroshiro 128+'], loc='upper left')
 plt.grid()
 #plt.show()
 plt.savefig('barchart_compare.png')
