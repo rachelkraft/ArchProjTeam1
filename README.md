@@ -4,13 +4,21 @@ This blog explores the performance of different Pseudo Random Number Generators 
 Testing
 
 Problem and Motivation
+
 Literature Review
+
 Our Solution
+
 Experimental Setup
+
 Evaluation
+
 Disscussion/Results
+
 Threats to Validity
+
 Challenges and Future Work
+
 References
 
 ## Problem and Motivation
