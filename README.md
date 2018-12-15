@@ -11,15 +11,15 @@ Although we focused on pseudo-random number generators (PRNGs), these are not th
 Timeline
 
 #### Mersenne Twister
-The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitled "Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator" by Makoto Matsumoto and Takuji Nishimura. MT made many improvements to older random number generators. Specifically, MT was a modified version of (T)GFSR or Twisted Generalized Feedback Shift Register; these algorithms are ultimately based on inductive algebra. MT increased number generation speed while also fulfilling some important properties that older algorithms failed. Its name refers to the period of the algorithm (how many iterations before it begins to repeat), 2^(19937) - 1, which is a Mersenne prime number. MT's major contributions were improvements to k-distribution, the characteristic polynomial, and the relatively long period compared to leading PRNGs at the time. Below is the comparison table provided in the original paper; the algorithms that are not MT are mostly variants of TGFSR.
+The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitled "Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator" by Makoto Matsumoto and Takuji Nishimura. MT made many improvements to older random number generators. Specifically, MT was a modified version of (T)GFSR or Twisted Generalized Feedback Shift Register; these algorithms are ultimately based on inductive algebra. MT increased number generation speed while also fulfilling some important properties that older algorithms failed. Its name refers to the period of the algorithm (how many iterations before it begins to repeat), 2^(19937) - 1, which is a Mersenne prime number. MT's major contributions were improvements to k-distribution, the characteristic polynomial, and the relatively long period compared to leading PRNGs at the time. Below is the comparison table provided in the original paper; the algorithms that are not MT are mostly variants of TGFSR. The "working area" row is a measure of the memory space each algorithm needs. 
 
 <img src="report_images/MT_table.png" alt="hi" class="inline"/>
 
 #### Xorshift 128+ 
 George Marsaglia published "Xorshift RNGs" in 2003 which introduced the class of xorshift PRNGs. His major improvement upon previous PRNGs was utilizing a non-sparse polynomial. Informally, this means that previous PRNGs would "skip" many potential numbers, which leads to predictability (non-normal distributions) and shorter periods. Xorshift 128+ was published in the paper "Further scramblings of Marsaglia’s xorshift generators" by Sebastiano Vigna in 2016. His major contribution was lengthening the period to 2^(128) - 1 which allowed the algorithm to pass more statistical tests than many other xorshift variants. Although xorshift128+ may still sometimes pass fewer statistical tests than MT, it was designed with speed as the first priority.
 
-#### SPCG64 
-Write SPCG64 history here
+#### SPCG64
+SPCG64 is a simplified variant of the Permuted Congruential Generator, published in 2016 by Melissa E. O'Neill. This generator was designed for limited memory capacity and somewhat limited computational power. It aims to produce "medium-quality" numbers very efficiently.
 
 #### Xoroshiro 128+ 
 Write Xoroshiro history here
