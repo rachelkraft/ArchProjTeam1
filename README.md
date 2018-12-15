@@ -14,8 +14,7 @@ Challenges and Future Work
 References
 
 ## Problem and Motivation
-Problem and Motivation text
-
+Although we focused on pseudo-random number generators (PRNGs), these are not the only tools available for generating random numbers. Hardware random number generators (HRNGs), also known as true random number generators (TRNGs), are hardware that exploit quantum phenomena. These phenomena, in theory, provide true randomness and, as a result, TRNGs are most widely-used in encryption protocols. However, due to [reference incompleteness or something], we are unable to prove that TRNGs generate truly random numbers. That being said, we cannot prove that TRNGs do not generate truly random numbers, whereas, we have proven that PRNGs don’t generate truly random numbers. Now you may ask, why do we use PRNGs at all (instead of just using TRNGs)? The answer is comprised of many different reasons. TRNGs are slower than PRNGs. For example, in cryptography applications, they often generate a seed to feed to a PRNG as a way to leverage “some randomness” while also meeting time requirements. TRNGs also degrade immeasurably (due to their construction), and this degradation results in a loss of randomness[footnote about testing tools]. Degradation will also amplify any existing bias in the TRNG - bias often results in non-normal distributions of numbers generated. Note: PRNGs are implemented in software, while TRNGs are implemented in hardware. TRNGs cannot be implemented as software because [definition of Turing machine].
 ## Literature Review
 Lit Review text
 
