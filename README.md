@@ -23,8 +23,8 @@ Graphs looking at all the results
 <img src="Graphing/Shootout_Graphs/shootout_boxcompare_all.png" alt="hi" class="inline"/>
 <img src="Graphing/barchart_compare.png" alt="hi" class="inline"/>
 
-<img src="Graphing/Shootout_Graphs/shootout_boxcompare_mt.png" alt="hi" width="425"/> 
-<img src="Graphing/Shootout_Graphs/shootout_boxcompare_xorshift.png" alt="hi" width="425"/>
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_mt.png" alt="hi" width="420"/> 
+<img src="Graphing/Shootout_Graphs/shootout_boxcompare_xorshift.png" alt="hi" width="420"/>
 <img src="Graphing/Shootout_Graphs/shootout_boxcompare_spcg64.png" alt="hi" width="425"/>
 <img src="Graphing/Shootout_Graphs/shootout_boxcompare_xoroshiro.png" alt="hi" width="425"/>
 
