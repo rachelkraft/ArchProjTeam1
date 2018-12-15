@@ -32,7 +32,7 @@ SPCG64 is a simplified variant of the Permuted Congruential Generator, published
 #### Xoroshiro 128+ 
 Xoroshiro 128+ was a collaboration between David Blackman and Sebastiano Vigna intended to succeed xorshift 128+. They published "Scrambled Linear Pseudorandom Number Generators" in May 2018. It specifically aimed to maintain the high speed of the PRNG while strengthening some of its statistical weak spots. Particulary, they aimed to improve the results of the binary-rank and linear-complexity tests. They introduce two new linear transformations designed to be statistically sound in addition to proposing a new bias-detection technique. Fianlly, they strategically combine scramblers (non-linear transformations) with linear transformations to produce results that maintain (or improve) statistical integrity while improving speed.
 
-### Architectures We Test On
+### Architectures Tested
 
 |    System    | Architecture |   # Cores  | Speed (GHz) |  Memory  | Memory speed (MHz) |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -108,8 +108,8 @@ We took the same data, and compared across the 4 different algorithms, to see wh
 
 Across the different algorithms, the oldest, Mersenne Twister, is slower, but only by a few microsends. The other three are extremely similar. Interestingly, the MacBook 2015 and Ubuntu 18.04 have the least amount of variance. 
 
-## Future Work/Challenges/Threats to Validity
-List some of our challenges or challenges that people might run into 
+## Future Work/Challenges
+We faced a few roadblocks during our experiment that inspired us with ideas for future work. For example, we tried to run the PRNGs on one of our team member's ECE/CIS accounts but due to permissions issues, we were unable to obtain results for that machine. We also attempted testing on an AMD machine one of our team members built, but the machine ended up having to be wiped after experimenting with generating over a billion numbers. Our team member with a windows machine was unable to properly build or run the test suites. Ideally, we'd love to look at results from a wider diversity of architectures (server machines, mobile phones, etc.). We unfortunately did not have time to experiement with the effect using a different compiler (like clang) would impact our results. There are also other test suites that may provide a different perspective, such as the R package, RDieharder.
 
 ## Conclusion
 In conclusion, we found that the overall PRNG performances did match our expectations with the most recent PRNG producing the highest overall performance. Accordingly, we can arrange the chosen PRNG based on their performances in all three tests.
