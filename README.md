@@ -36,6 +36,7 @@ We tested four distinct Intel Core architectures released between 2011 and 2017.
 Unfortunately, after scouring the web, we couldn't find any reliable information about transistor count or die size for the Kaby Lake architecture. Kaby Lake is the successor to the Skylake architecture (which also has 14 nm lithography) when it was announced that the 10 nm lithography Cannon Lake architecture release would be delayed. Kaby Lake is a physical artifact of Moore's Law (and the fact that it is losing relevancy) as it broke the Intel "tick-tock" design/release model which incorporated die size decrease as a central element of a new architecture, and instead introduced the new "process architecture optimization" design model. Note that our Kaby Lake 2017 Macbook is the only machine we tested that utilized low-power cores. Broadwell is the predecessor to Skylake and the sucessor of the Haswell architecture. Most of the improvements made in the Broadwell architecture are related to the details of the integrated GPU, particulary for data science.
 
 | Architecture | Release | Lithography (nm) | # Transistors | Die size (mm^2) |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
 | i7-2600 | Jan 2011, ~$300, Sandy Bridge (2nd generation) | 32 | 1.16 billion | 216 |
 | i7-2640M | Sept 2011, ~$350, Sandy Bridge (2nd generation) | 32 | 624 million | 149 |
 | i5-5257U | Jan 2015, ~$315, Broadwell-U (5th generation) | 14 | 1.3 - 1.9 billion | 82 - 133 |
