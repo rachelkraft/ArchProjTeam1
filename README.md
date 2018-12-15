@@ -11,9 +11,9 @@ Although we focused on pseudo-random number generators (PRNGs), these are not th
 Timeline
 
 #### Mersenne Twister
-The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitled "Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator" by Makoto Matsumoto and Takuji Nishimura. MT made many improvements to older random number generators. Specifically, MT was a modified version of (T)GFSR or Twisted Generalized Feedback Shift Register; these algorithms are ultimately based on inductive algebra. MT increased number generation speed while also fulfilling some important properties that older algorithms failed (that are very similar to TGFSR). Its name refers to the period of the algorithm (how many iterations before it begins to repeat), 2^(19937) - 1, which is a Mersenne prime number. MT's major contributions were improvements to k-distribution, the characteristic polynomial, and the relatively long period compared to leading PRNGs at the time. Below is the comparison table provided in the original paper.
+The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitled "Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator" by Makoto Matsumoto and Takuji Nishimura. MT made many improvements to older random number generators. Specifically, MT was a modified version of (T)GFSR or Twisted Generalized Feedback Shift Register; these algorithms are ultimately based on inductive algebra. MT increased number generation speed while also fulfilling some important properties that older algorithms failed. Its name refers to the period of the algorithm (how many iterations before it begins to repeat), 2^(19937) - 1, which is a Mersenne prime number. MT's major contributions were improvements to k-distribution, the characteristic polynomial, and the relatively long period compared to leading PRNGs at the time. Below is the comparison table provided in the original paper; the algorithms that are not MT are mostly variants of TGFSR.
 
-
+<img src="report_images/MT_table.png" alt="hi" class="inline"/>
 
 #### Xorshift 128+ 
 Write Xorshift history here
