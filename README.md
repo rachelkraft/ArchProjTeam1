@@ -15,7 +15,7 @@ Experimental Setup text and table
 
 ## Evaluation
 ### Dieharder Results
-Dieharder results (text and table)
+For testing the correctness of our PRNGs, we used a suite called dieharder.
 
 ### Timing Test 1: Shootout Results
 In addition to the dieharder suite, we also used a tool "shootout" to test the speed of our chosen PRNGs. It was written by Chris Wellons and can be found here. This tool takes each PRNG and records the amount of random numbers generated in one second, measured in MB. We ran this tool 30 times on each architecture (Mac 2011, Mac 2015, Mac 2017, Ubuntu 18.04) and recorder the value for all four algorithms (Mersenne Twister, Xorshift 128+, SPCG 64, and Xoroshiro 128+). Our expectations are that, within each algorithm, we will see higher MBs generated per second for more recent algorithms. 
