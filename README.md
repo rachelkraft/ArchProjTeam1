@@ -22,7 +22,7 @@ George Marsaglia published "Xorshift RNGs" in 2003 which introduced the class of
 SPCG64 is a simplified variant of the Permuted Congruential Generator, published in 2016 by Melissa E. O'Neill. This generator was designed for limited memory capacity and somewhat limited computational power. It aims to produce "medium-quality" numbers very efficiently.
 
 #### Xoroshiro 128+ 
-Write Xoroshiro history here
+Xoroshiro 128+ was a collaboration between David Blackman and Sebastiano Vigna intended to succeed xorshift 128+. They published "Scrambled Linear Pseudorandom Number Generators" in May 2018. It specifically aimed to maintain the high speed of the PRNG while strengthening some of its statistical weak spots. Particulary, they aimed to improve the results of the binary-rank and linear-complexity tests. They introduce two new linear transformations designed to be statistically sound in addition to proposing a new bias-detection technique. Fianlly, they strategically combine scramblers (non-linear transformations) with linear transformations to produce results that maintain (or improve) statistical integrity while improving speed.
 
 ### Architectures We Test On
 
