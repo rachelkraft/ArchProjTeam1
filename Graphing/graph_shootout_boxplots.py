@@ -24,10 +24,10 @@ em_data_xoro = em_data_df['Xoroshiro 128+']
 em_data_xorsh = em_data_df['Xorshift 128+']
 em_data_spcg = em_data_df['SPCG64']
 
-agni_data_mt = r_data_df['Mersenne Twister']
-agni_data_xoro = r_data_df['Xoroshiro 128+']
-agni_data_xorsh = r_data_df['Xorshift 128+']
-agni_data_spcg = r_data_df['SPCG64']
+agni_data_mt = agni_data_df['Mersenne Twister']
+agni_data_xoro = agni_data_df['Xoroshiro 128+']
+agni_data_xorsh = agni_data_df['Xorshift 128+']
+agni_data_spcg = agni_data_df['SPCG64']
 
 
 mt_data_a = [r_data_mt.values]
@@ -86,7 +86,7 @@ plt.legend()
 
 plt.xticks(range(0, 0,1), ticks)
 plt.xlim(-2, len(ticks)*2)
-plt.ylim(1000, 2500)
+plt.ylim(800, 2500)
 plt.ylabel("MB/s",fontweight='bold')
 plt.xlabel("Mersenne Twister Algorithm",fontweight='bold')
 fig.suptitle("\n".join(wrap('Random Numbers Generated in One Second for the Mersenne Twister Algorithm Across Different Architectures', 60)), fontsize=10, fontweight='bold')
@@ -98,9 +98,9 @@ ticks = ['Xoroshiro']
 
 fig = plt.figure()
 
-bpl = plt.boxplot(xoro_data_a, positions=np.array(range(len(xoro_data_a)))*2.0-1.2, sym='', widths=0.6)
+bpl = plt.boxplot(xoro_data_c, positions=np.array(range(len(xoro_data_c)))*2.0-1.2, sym='', widths=0.6)
 bpr = plt.boxplot(xoro_data_b, positions=np.array(range(len(xoro_data_b)))*2.0-0.4, sym='', widths=0.6)
-bps = plt.boxplot(xoro_data_c, positions=np.array(range(len(xoro_data_c)))*2.0+0.4, sym='', widths=0.6)
+bps = plt.boxplot(xoro_data_a, positions=np.array(range(len(xoro_data_a)))*2.0+0.4, sym='', widths=0.6)
 bpt = plt.boxplot(xoro_data_d, positions=np.array(range(len(xoro_data_d)))*2.0+1.2, sym='', widths=0.6)
 
 set_box_color(bpl, '#D7191C') # colors are from http://colorbrewer2.org/

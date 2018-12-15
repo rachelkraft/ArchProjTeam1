@@ -2,25 +2,16 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-r_data_df = pd.read_csv('Shootout_Mac2017.csv')
-em_data_df = pd.read_csv('Shootout_Emily.csv')
-aishah_data_df = pd.read_csv('Shootout_Aishah_Mac2011.csv')
-agni_data_df = pd.read_csv('Shootout_Agni.csv')
+r_data_df = pd.read_csv('./Shootout Data/Shootout_Mac2017.csv')
+em_data_df = pd.read_csv('./Shootout Data/Shootout_Emily.csv')
+aishah_data_df = pd.read_csv('./Shootout Data/Shootout_Aishah_Mac2011.csv')
+agni_data_df = pd.read_csv('./Shootout Data/Shootout_Agni.csv')
 
 df = pd.concat([r_data_df.mean(),em_data_df.mean(),aishah_data_df.mean(),agni_data_df.mean()],axis=1).T
 
-print(df)
-
-#raw_data = {'first_name': ['Jason', 'Molly', 'Tina', 'Jake', 'Amy'],
-# 'pre_score': [4, 24, 31, 2, 3],
-#    'mid_score': [25, 94, 57, 62, 70],
-#   'post_score': [5, 43, 23, 23, 51]}
-#df = pd.DataFrame(raw_data, columns = ['first_name', 'pre_score', 'mid_score', 'post_score'])
 
 # Setting the positions and width for the bars
-#pos = list(range(len(df['pre_score'])))
 pos = list(range(len(df['Mersenne Twister'])))
-print(pos)
 width = 0.2
 
 # Plotting the bars
@@ -96,7 +87,7 @@ ax.set_xticklabels(['MacBook 2017','MacBook 2015','MacBook 2011','Ubuntu 18.04']
 
 # Setting the x-axis and y-axis limits
 plt.xlim(min(pos)-width, max(pos)+width*4)
-plt.ylim([0, max(df['Mersenne Twister'] + df['SPCG64'] + df['Xoroshiro 128+'] + df['Xorshift 128+'])] )
+plt.ylim([0, 10000] )
 
 # Adding the legend and showing the plot
 plt.legend(['Mersenne Twister', 'SPCG64', 'Xoroshiro 128+','Xorshift 128+'], loc='upper left')
