@@ -57,10 +57,10 @@ For our testing, we created a file for each PRNG of 60 million numbers generated
 
 |     PRNGs     | Tests Passed  |   Tests Weak  | Tests Failed  |  Total Tests  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Mersenne Twister  | Content Cell  | Content Cell  | Content Cell  | Content Cell  | 
-| Xorshift 128+ | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| SPCG 64 | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
-| Xoroshiro 128+ | Content Cell  | Content Cell  | Content Cell  | Content Cell  |
+| Mersenne Twister  | Content Cell  | Content Cell  | Content Cell  | 114  | 
+| Xorshift 128+ | Content Cell  | Content Cell  | Content Cell  | 114  |
+| SPCG 64 | Content Cell  | Content Cell  | Content Cell  | 114  |
+| Xoroshiro 128+ | Content Cell  | Content Cell  | Content Cell  | 114  |
 
 #### Test 2: Shootout Timings
 
