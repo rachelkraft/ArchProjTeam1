@@ -132,35 +132,15 @@ Sebastiano Vigna. "Further scramblings of Marsaglia’s xorshift generators". No
 David Blackman and Sebastiano Vigna. "Scrambled Linear Pseudorandom Number Generators". May 2018.
 
 ### Background and Tools
-http://webhome.phy.duke.edu/~rgb/General/dieharder.php
-http://webcache.googleusercontent.com/search?q=cache:UmEqtn4_IkwJ:cryptography.gmu.edu/~%20jkaps/download.php%3Fdocid%3D1083+&cd=5&hl=en&ct=clnk&gl=us 
-http://www.pcg-random.org/pdf/hmc-cs-2014-0905.pdf 
-https://riivo.talviste.ee/ut/kursused/basoti/conference/comparison-of-prngs-slides.pdf
-https://nullprogram.com/blog/2017/09/21/
-https://github.com/skeeto/prng64-shootout
-https://en.wikipedia.org/wiki/List_of_random_number_generators 
-https://www.anandtech.com/show/10183/intels-tick-tock-seemingly-dead-becomes-process-architecture-optimization
+* http://webhome.phy.duke.edu/~rgb/General/dieharder.php
+* http://webcache.googleusercontent.com/search?q=cache:UmEqtn4_IkwJ:cryptography.gmu.edu/~%20jkaps/download.php%3Fdocid%3D1083+&cd=5&hl=en&ct=clnk&gl=us 
+* http://www.pcg-random.org/pdf/hmc-cs-2014-0905.pdf 
+* https://riivo.talviste.ee/ut/kursused/basoti/conference/comparison-of-prngs-slides.pdf
+* https://nullprogram.com/blog/2017/09/21/
+* https://github.com/skeeto/prng64-shootout
+* https://en.wikipedia.org/wiki/List_of_random_number_generators 
+* https://www.anandtech.com/show/10183/intels-tick-tock-seemingly-dead-becomes-process-architecture-optimization
 
 ### Architecture Specifications
-https://ark.intel.com/
-https://en.wikichip.org/wiki/WikiChip
-
-# Examples
-## How to put in Image
-<img src="Graphing/barchart_compare.png" alt="hi" class="inline"/>
-
-## Subtitle
-Some stuff
-### Sub Subtitle
-More stuff
-#### Sub Sub Sub Title
-```
-Give an example
-```
-## This is how you do a list
-* Item 1
-* Item 2
-* Item 3
-
-This is how you do **bold** and this is how you do *italics*
-[Web link](https://rachelkraft.github.io/ArchProjTeam1/)
+* https://ark.intel.com/
+* https://en.wikichip.org/wiki/WikiChip
