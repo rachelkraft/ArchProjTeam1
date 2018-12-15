@@ -1,5 +1,15 @@
 # Testing PRNGS Across Different Architectures
-A repository for our architecture group team
+This blog explores the performance of different Pseudo Random Number Generators (PRNGs) across different architectures. It was inspired by a project in our architecture class, and we wanted to post it for anyone else who might be interested in doing this. In this blog we look at 4 different PRNGs (Mersenne Twister, Xorshift 128+, SPCG 64, and Xoroshiro 128+) and test both their speed and statistical correctness on 4 different architectures (MacBook Pro 2011, MacBook Pro 2015, MacBook 2017, and Ubuntu 18.04). These are the four personal machines that we had at our disposal. We wanted to see if there were any huge differences in performance between them, especially with 3 of them being so similar and take a deeper dive into why this might be the case. We will be using two tools (shootout and dieharder) to help us test speed and accuracy of these PRNGs. The rest of the blog is as follows:
+
+Problem and Motivation
+Literature Review
+Our Solution
+Experimental Setup
+Evaluation
+Disscussion/Results
+Threats to Validity
+Challenges and Future Work
+References
 
 ## Problem and Motivation
 Problem and Motivation text
