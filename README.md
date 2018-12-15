@@ -51,7 +51,7 @@ Our second test was run using a tool called shootout. It gives C implementations
 #### Test 3: Individual Timings
 Our third tests were to do individual timings of each PRNG to produce 1,5, and 10 million random numbers. We ran this test 10 times for each architecture, for each PRNG. 
 
-If you want to follow our experimental method exactly, go to Testing_README.md in the repo and it will give you all the comands to run.
+If you want to follow our experimental method exactly, go to Testing_Plan_README.txt in the repo and it will give you all the comands to run.
 
 ## Evaluation
 ### Dieharder Results
