@@ -1,24 +1,5 @@
 # Testing PRNGS Across Different Architectures
-This blog explores the performance of different Pseudo Random Number Generators (PRNGs) across different architectures. It was inspired by a project in our architecture class, and we wanted to post it for anyone else who might be interested in doing this. In this blog we look at 4 different PRNGs (Mersenne Twister, Xorshift 128+, SPCG 64, and Xoroshiro 128+) and test both their speed and statistical correctness on 4 different architectures (MacBook Pro 2011, MacBook Pro 2015, MacBook 2017, and Ubuntu 18.04). These are the four personal machines that we had at our disposal. We wanted to see if there were any huge differences in performance between them, especially with 3 of them being so similar and take a deeper dive into why this might be the case. We will be using two tools (shootout and dieharder) to help us test speed and accuracy of these PRNGs. The rest of the blog is as follows:
-
-Testing\n
-Problem and Motivation
-
-Literature Review
-
-Our Solution
-
-Experimental Setup
-
-Evaluation
-
-Disscussion/Results
-
-Threats to Validity
-
-Challenges and Future Work
-
-References
+This blog explores the performance of different Pseudo Random Number Generators (PRNGs) across different architectures. It was inspired by a project in our architecture class, and we wanted to post it for anyone else who might be interested in doing this. In this blog we look at 4 different PRNGs (Mersenne Twister, Xorshift 128+, SPCG 64, and Xoroshiro 128+) and test both their speed and statistical correctness on 4 different architectures (MacBook Pro 2011, MacBook Pro 2015, MacBook 2017, and Ubuntu 18.04). These are the four personal machines that we had at our disposal. We wanted to see if there were any huge differences in performance between them, especially with 3 of them being so similar and take a deeper dive into why this might be the case. We will be using two tools (shootout and dieharder) to help us test speed and accuracy of these PRNGs. 
 
 ## Problem and Motivation
 Although we focused on pseudo-random number generators (PRNGs), these are not the only tools available for generating random numbers. Hardware random number generators (HRNGs), also known as true random number generators (TRNGs), are hardware that exploit quantum phenomena. These phenomena, in theory, provide true randomness and, as a result, TRNGs are most widely-used in encryption protocols. However, due to [reference incompleteness or something], we are unable to prove that TRNGs generate truly random numbers. That being said, we cannot prove that TRNGs do not generate truly random numbers, whereas, we have proven that PRNGs don’t generate truly random numbers. Now you may ask, why do we use PRNGs at all (instead of just using TRNGs)? The answer is comprised of many different reasons. TRNGs are slower than PRNGs. For example, in cryptography applications, they often generate a seed to feed to a PRNG as a way to leverage “some randomness” while also meeting time requirements. TRNGs also degrade immeasurably (due to their construction), and this degradation results in a loss of randomness[footnote about testing tools]. Degradation will also amplify any existing bias in the TRNG - bias often results in non-normal distributions of numbers generated. Note: PRNGs are implemented in software, while TRNGs are implemented in hardware. TRNGs cannot be implemented as software because [definition of Turing machine].
@@ -105,16 +86,8 @@ We took the same data, and compared across the 4 different algorithms, to see wh
 
 Across the different algorithms, the oldest, Mersenne Twister, is slower across the board, but only by a few microsends. The other three are extremely similar. Interestingly, the MacBook 2015 and Ubuntu 18.04 have the least amount of variance. 
 
-## Discussion/Results
-Our discussion of the graphs and results
 
-## Threats to Validity
-I think we should add in this section, since it will be public
-
-## Future Work
-Future work
-
-## Challenges
+## Future Work/Challenges/Threats to Validity
 List some of our challenges or challenges that people might run into 
 
 ## References
