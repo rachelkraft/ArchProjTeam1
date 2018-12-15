@@ -27,7 +27,7 @@ The Mersenne Twister (MT) algorithm was first introduced in a 1998 paper entitle
 George Marsaglia published "Xorshift RNGs" in 2003 which introduced the class of xorshift PRNGs. His major improvement upon previous PRNGs was utilizing a non-sparse polynomial. Informally, this means that previous PRNGs would "skip" many potential numbers, which leads to predictability (non-normal distributions) and shorter periods. Xorshift 128+ was published in the paper "Further scramblings of Marsaglia’s xorshift generators" by Sebastiano Vigna in 2016. His major contribution was lengthening the period to 2^(128) - 1 which allowed the algorithm to pass more statistical tests than many other xorshift variants. Although xorshift128+ may still sometimes pass fewer statistical tests than MT, it was designed with speed as the first priority.
 
 #### SPCG64
-SPCG64 is a simplified variant of the Permuted Congruential Generator, published in 2016 by Melissa E. O'Neill. This generator was designed for limited memory capacity and somewhat limited computational power. It aims to produce "medium-quality" numbers very efficiently.
+SPCG64 is a simplified variant of the Permuted Congruential Generator, published in 2014 by Melissa E. O'Neill. This generator was designed for limited memory capacity and somewhat limited computational power. It aims to produce "medium-quality" numbers very efficiently.
 
 #### Xoroshiro 128+ 
 Xoroshiro 128+ was a collaboration between David Blackman and Sebastiano Vigna intended to succeed xorshift 128+. They published "Scrambled Linear Pseudorandom Number Generators" in May 2018. It specifically aimed to maintain the high speed of the PRNG while strengthening some of its statistical weak spots. Particulary, they aimed to improve the results of the binary-rank and linear-complexity tests. They introduce two new linear transformations designed to be statistically sound in addition to proposing a new bias-detection technique. Fianlly, they strategically combine scramblers (non-linear transformations) with linear transformations to produce results that maintain (or improve) statistical integrity while improving speed.
@@ -114,29 +114,36 @@ We faced a few roadblocks during our experiment that inspired us with ideas for 
 ## Conclusion
 In conclusion, we found that the overall PRNG performances did match our expectations with the most recent PRNG producing the highest overall performance. Accordingly, we can arrange the chosen PRNG based on their performances in all three tests.
 
-* 1. Xoroshiro 128+
-* 2. SPCG 64
-* 3. Xorshift 128+
-* 4. Mersenne Twister
+1. Xoroshiro 128+
+2. SPCG 64
+3. Xorshift 128+
+4. Mersenne Twister
 
 Xoroshiro128+ is clearly the fastest considering both speed tests, and it also has the fewest observed statistical failure tests compared to the others. We consider failure tests because they are more significant, while weak results are used only to break ties. Also, SPCG64 is considered the second best performance although Xorshift128+ exceeds its performance for the shootout test. This is because SPCG64 has less statistical failure tests compared to Xorshift 128+. Xorshift 128+ comes in third place although it has more statistical failure tests than Mersenne Twister. This is because we are also considering number-generation speed which shows that Xorshift 128+ has significantly higher performance results for both speed tests compared to Mersenne Twister.
 
 ## References
-Our references
+### Papers
+Makoto Matsumoto and Takuji Nishimura. "Mersenne Twister: A 623-Dimensionally Equidistributed Uniform Pseudo-Random Number Generator". 1998.
 
+Melissa E. O'Neill. "PCG: A Family of Simple Fast Space-Efficient Statistically Good Algorithms for Random Number Generation". Sept 2014. https://www.cs.hmc.edu/tr/hmc-cs-2014-0905.pdf.
 
+Sebastiano Vigna. "Further scramblings of Marsaglia’s xorshift generators". Nov 2016.
 
+David Blackman and Sebastiano Vigna. "Scrambled Linear Pseudorandom Number Generators". May 2018.
 
+### Background and Tools
+http://webhome.phy.duke.edu/~rgb/General/dieharder.php
+http://webcache.googleusercontent.com/search?q=cache:UmEqtn4_IkwJ:cryptography.gmu.edu/~%20jkaps/download.php%3Fdocid%3D1083+&cd=5&hl=en&ct=clnk&gl=us 
+http://www.pcg-random.org/pdf/hmc-cs-2014-0905.pdf 
+https://riivo.talviste.ee/ut/kursused/basoti/conference/comparison-of-prngs-slides.pdf
+https://nullprogram.com/blog/2017/09/21/
+https://github.com/skeeto/prng64-shootout
+https://en.wikipedia.org/wiki/List_of_random_number_generators 
+https://www.anandtech.com/show/10183/intels-tick-tock-seemingly-dead-becomes-process-architecture-optimization
 
-
-
-
-
-
-
-
-
-
+### Architecture Specifications
+https://ark.intel.com/
+https://en.wikichip.org/wiki/WikiChip
 
 # Examples
 ## How to put in Image
