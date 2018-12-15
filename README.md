@@ -53,14 +53,14 @@ Dieharder is a random number generator (RNG) testing suite and it is intended to
 
 ## Evaluation
 ### Dieharder Results
-For our testing with dieharder, we created a file for each PRNG of 60 million numbers generated to use for testing. The dieharder tool was then run on these files and the results output to a text file. Below is a table summarizing our results. 
+For our testing with dieharder, we created a file for each PRNG of 60 million numbers generated to use for testing. The dieharder tool was then run on these files and the results output to a text file. Below is a table summarizing our results.  The "Tests Weak" column represents tests that passed, but not to dieharder's specifications of complete passing. 
 
 |     PRNGs     | Tests Passed  |   Tests Weak  | Tests Failed  |  Total Tests  |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Mersenne Twister  | Content Cell  | Content Cell  | Content Cell  | 114  | 
-| Xorshift 128+ | Content Cell  | Content Cell  | Content Cell  | 114  |
-| SPCG 64 | Content Cell  | Content Cell  | Content Cell  | 114  |
-| Xoroshiro 128+ | Content Cell  | Content Cell  | Content Cell  | 114  |
+| Mersenne Twister  | 91  | 10  | 13 | 114  | 
+| Xorshift 128+ | 95  | 5  | 14  | 114  |
+| SPCG 64 | 95  | 7  | 12  | 114  |
+| Xoroshiro 128+ | 89  | 15  | 10  | 114  |
 
 ### Timing Test 1: Shootout Results
 In addition to the dieharder suite, we also used a tool "shootout" to test the speed of our chosen PRNGs. It was written by Chris Wellons and can be found here. This tool takes each PRNG and records the amount of random numbers generated in one second, measured in MB. We ran this tool 30 times on each architecture (Mac 2011, Mac 2015, Mac 2017, Ubuntu 18.04) and recorder the value for all four algorithms (Mersenne Twister, Xorshift 128+, SPCG 64, and Xoroshiro 128+). Our expectations are that, within each algorithm, we will see higher MBs generated per second for more recent algorithms. 
